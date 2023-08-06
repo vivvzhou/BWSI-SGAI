@@ -1,0 +1,92 @@
+Welcome to the player's guide
+
+
+BASIC PREMISE
+=============
+The zombie apocalpyse has happened, and you are tasked with taking an ambulence around the city to pick up survivors. You will be given a set of images with a humanoid in them, 
+oriented differently in each image. The humanoid can be either a zombie or a human, and it is your job to identify whether or not the humanoid is a zombie or not. Furthermore,
+you must decide whether or not to save the humanoid, to squish the humanoid, to skip the humanoid, or to scram. Each humanoid, zombie or human, has a profession, and you are 
+encouraged to diversity that professions you save as much as possible (you get large point bonuses for taking in a profession you don't already have).
+
+HUMANOID STATES
+===============
+There are 4 different types of humanoids:
+
+Healthy: Humanoids that are standing up and have normal (not green) skincolor. 
+
+Injured: Humanoids that have been injured and have between a 1-15% chance to convert to zombies. They lie on the ground with normal skin color.
+
+Zombie: Humanoids that have converted into zombies, but they can be cured. They are standing up with green skin color.
+
+Corpse: Dead humanoids that cannot be saved nor cured. They are lie on the ground with green skin color. 
+
+
+CHOICES
+=======
+Skip: Leave the current humanoid behind and go to the next humanoid. It takes 15 minutes to skip.
+
+Squish: Run over the current humanoid at the cost of some damage to your vehicle (Thus, it has a limited amount of uses). Squishing an injured that was actually NOT going to convert
+to a zombie will result in a major point deduction, but running over an injured that was going to convert will NOT result in a point deduction. It takes 5 minutes to squish.
+
+Cure: Convert a zombie humanoid to a healthy humanoid. You get an extra point boost for converting, but it takes a lot of time to do so. The converted humanoid will also possess a 
+profession, and all other features that define a non-zombie humanoid. It takes 60 minutes to cure.
+
+Save: Rescue the humanoid and stow it in the van. Be careful who you save, because if you save a zombie humanoid, everyone in the back of the van (and all future healthy/injured
+humanoids added) will be killed and zombified. Furthermore, saving an injured humanoid exposes you to a small chance (10-30%) that they will convert to a zombie while they are in the 
+back of the ambulance. It takes 30 minutes to save.
+
+Scram: Return to the hospital and empty the ambulance (including corpses and zombies). This opens up more space to save more people and also gets rid of any zombies stuck in the 
+back of the van so you can continue to save people without immediately killing and zombifying them as soon as you add them to the ambulance. It takes 120 minutes to scram.
+
+
+SCORING & TIMING DETAILED
+=========================
+Skip: 15 minutes, no relevant scoring 
+
+Squish: 5 minutes, drops the hp of the vehicle by a random amount (100-150) each time, -6 for squishing an injured that was not going to convert to a zombie, +8 for squishing an injured that was
+going to convert, -10 for squishing a healthy
+
+Cure: 60 minutes, Convert a zombie to a healthy. Then scoring is treated as if you are saving a healthy. (Curing doesn't do anything on corpses and injured and healthy, it just saves them without 
+doing anything)
+
+Save: 30 minutes, drops the score to what it was at the time of the most recent scram for saving a zombie. +4 for saving an injured. +5 for saving a healthy. (PROFESSION BONUSES: Engineer (+8), Teacher (+2),
+Mayor (+3), Farmer (+4), Doctor (+5), Criminal (+1 or -3, depending on if it is a violent one or helpful one; 30% chance to be violent)) **Profession bonuses are only gained from picking up a new profession
+for the FIRST TIME**
+
+Scram: 120 minutes, sets a "checkpoint" for your score. The game saves your current score and defaults back to it if you save a zombie later on after scramming.
+
+
+PROFESSIONS
+===========
+There are currently 6 professions in the game: Teacher, Mayor, Engineer, Doctor, Farmer, and Criminal (more on that later). The game encourages you to pick up a diverse array of 
+professions. Each unique profession pick up (one that you don't already have) will reward you a substancial point bonus on top of the default amount of points rewarded for saving and 
+non-zombie. Criminals are a special case, since they have a chance of bring either a passive criminal or a violent criminal. If the criminal turns out to be violent, you get a slight 
+point deduction. If not, you get the point bonus and the default amount of poinst awarded for saving any non-zombie individual. A small meter on the left side of the UI will show 
+which professions you have and which ones you don't (RED = don't have; GREEN = have).
+
+
+AI
+==
+Currently, there is one AI called "Simon" (bottom right corner), that is capable ot classifying the image to the best of its abilities and offering a suggestion of what action to take.
+There is also a reinforcement learning algorithm that runs in the backend to try to play the game (a slightly modified version, but almost identical) as optimally as possible. 
+
+
+RESTARTING
+==========
+After you close the game, a popup should appear with a yes or no question. Clicking 'yes' will restart the game while clicking 'no' fully closes it. 
+
+
+SAVING NAME 
+===========
+After the restart popup, a second popup should show asking for your first name. This is to store the data accurately. 
+
+
+Credits
+=======
+"Squish" audio: https://freesound.org/people/balloonhead/sounds/362335/
+"Save" audio: https://freesound.org/people/Daniel-Cabanas/sounds/448908/
+"Cure" audio: https://freesound.org/people/Robinhood76/sounds/345503/
+"Scram" audio: https://freesound.org/people/willybilly1984/sounds/345335/
+"Skip" audio: https://freesound.org/people/Jagadamba/sounds/257031/
+All under creative commons 4.0 attribution license.
+
